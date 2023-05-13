@@ -1,11 +1,5 @@
-import React from 'react'
+import React, {createContext} from 'react'
 
-const alertsContext = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const alertsContext = createContext();
 
 export default alertsContext

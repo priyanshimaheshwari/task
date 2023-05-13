@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ShowsState from './context/shows/ShowsState';
+import AlertsState from './context/alerts/AlertsState'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ShowsState>
+    <AlertsState>
     <App />
+    </AlertsState>
   </ShowsState>
 );
 

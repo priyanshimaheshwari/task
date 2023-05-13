@@ -148,9 +148,10 @@ img {
   background: #f4f4f4;
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
     0 3px 1px 0 rgba(20, 23, 28, 0.1);
-  margin: 1rem auto;
+  margin: 2rem 2rem auto;
   cursor: pointer;
   display: inline-block;
+  
 }
 
 .listitem:hover {
@@ -160,6 +161,7 @@ img {
 .listitem__info {
   color: black;
   text-align: center;
+  
 }
 
 .info__name {

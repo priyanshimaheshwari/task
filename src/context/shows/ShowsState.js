@@ -49,6 +49,7 @@ const ShowsState = (props) => {
     });
   };
 
+  
   const clearSingleShow = () => {
     dispatch({
       type: CLEAR_SINGLE_SHOW,
