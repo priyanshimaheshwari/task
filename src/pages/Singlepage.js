@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react'
 import ShowsContext from "../context/shows/showsContext";
 import Loader from "../components/Loader";
+import {SiBookmyshow} from 'react-icons/si'
 
 
 const Singlepage = ({ match }) => {
@@ -65,7 +66,7 @@ const Singlepage = ({ match }) => {
               )}
             </p>
             <p>{singleShow.summary && removeTags(singleShow.summary)}</p>
-            <button>Book my show</button>
+            <button className='btn btn-block'><SiBookmyshow />Book my show</button>
           </div>
         </div>
       )}
