@@ -6,13 +6,13 @@ import AlertsContext from '../context/alerts/alertsContext';
 
 const Searchbar = () => {
  const [searchTerm, setsearchTerm] = useState("");const showsContext = useContext(ShowsContext);
- const {searchShows} =useContext(ShowsContext)
+ const { searchShows } = showsContext;
  const { alert, setAlert } = useContext(AlertsContext);
  
 
  const onSearchHandler = (e) => {
   e.preventDefault();
-  if (searchTerm === "") {
+  if (searchTerm === " ") {
     setAlert("Please enter something", "danger");
   } else {
     searchShows(searchTerm);
