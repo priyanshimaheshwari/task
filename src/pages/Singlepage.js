@@ -2,15 +2,17 @@ import React, { useEffect, useContext } from 'react'
 import ShowsContext from "../context/shows/showsContext";
 import Loader from "../components/Loader";
 import {SiBookmyshow} from 'react-icons/si'
+import {  useParams } from 'react-router-dom';
 
 
 const Singlepage = ({ match }) => {
   const { getSingleShow, singleShow, loading } = useContext(ShowsContext);
-
+  const { id } = useParams();
   useEffect(() => {
-    getSingleShow(match.params.id);
+    
+    getSingleShow(id);
 
-   
+    
   }, []);
 
   const removeTags = (text) => {

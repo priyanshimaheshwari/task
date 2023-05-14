@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route exact path="/" Component={Homepage}/>
           <Route exact path="/about" Component={Aboutpage}/>
-          <Route exact path="/singleshow/:id" Component={SinglePage}/>
+          <Route exact path="/singleshow/:id" Component={SinglePage }/>
 
         </Routes>
       </div>
